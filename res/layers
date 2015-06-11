@@ -1,0 +1,1 @@
+enum layerTypes {"silnice","mimoúrovně","nezpevněné cesty","pasáže","chodníky","vyšlapané nábližky"}
