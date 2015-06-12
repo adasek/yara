@@ -1,6 +1,6 @@
 /* 
  * File:   Edge.cpp
- * Author: bedna
+ * Author: Adam Benda <adam@adasek.cz>
  * 
  * Created on June 11, 2015, 4:21 PM
  */

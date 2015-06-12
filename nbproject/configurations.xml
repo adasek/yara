@@ -5,8 +5,9 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>src/Edge.hpp</itemPath>
+      <itemPath>src/GeoPoint.hpp</itemPath>
       <itemPath>src/Graph.hpp</itemPath>
-      <itemPath>src/Point.hpp</itemPath>
+      <itemPath>src/Vertex.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -17,8 +18,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>src/Edge.cpp</itemPath>
+      <itemPath>src/GeoPoint.cpp</itemPath>
       <itemPath>src/Graph.cpp</itemPath>
-      <itemPath>src/Point.cpp</itemPath>
+      <itemPath>src/Vertex.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -49,13 +51,17 @@
       </item>
       <item path="src/Edge.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/GeoPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GeoPoint.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Graph.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Graph.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Point.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Vertex.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/Point.hpp" ex="false" tool="3" flavor2="0">
+      <item path="src/Vertex.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -86,13 +92,17 @@
       </item>
       <item path="src/Edge.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/GeoPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GeoPoint.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Graph.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Graph.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Point.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Vertex.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/Point.hpp" ex="false" tool="3" flavor2="0">
+      <item path="src/Vertex.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

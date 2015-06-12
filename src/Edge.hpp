@@ -1,13 +1,13 @@
 /* 
  * File:   Edge.hpp
- * Author: bedna
+ * Author: Adam Benda <adam@adasek.cz>
  *
  * Created on June 11, 2015, 4:21 PM
  */
 
 #ifndef EDGE_HPP
 #define	EDGE_HPP
-#include "Point.hpp"
+#include "GeoPoint.hpp"
 
 class Edge {
 
@@ -30,8 +30,8 @@ public:
     
 private:
     double distanceOrig; //Distance in minutes based on datafile
-    Point * source;
-    Point * dest;
+    GeoPoint * source;
+    GeoPoint * dest;
 
 };
 

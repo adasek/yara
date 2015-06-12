@@ -1,6 +1,6 @@
 /* 
  * File:   Graph.hpp
- * Author: bedna
+ * Author: Adam Benda <adam@adasek.cz>
  *
  * Created on June 12, 2015, 1:34 PM
  */
@@ -10,12 +10,12 @@
 
 #include <set>
 
-#include "Point.hpp"
+#include "GeoPoint.hpp"
 #include "Edge.hpp"
 
 
 class Graph {
-    typedef std::set<Point *> PointC;
+    typedef std::set<Vertex *> VertexC;
     typedef std::set<Edge *> EdgeC;
     
 public:
@@ -23,11 +23,11 @@ public:
     Graph(const Graph& orig);
     virtual ~Graph();
     
-    ///Searches for a point that is EQUAL with parameter
-    Point * find(const Point& point);
+    ///Searches for a Point (associated with Vertex) that is EQUAL to parameter
+    GeoPoint * find(const GeoPoint& point);
      
 private:
-    PointC points;
+    VertexC vertices;
     EdgeC edges;
 };
 

@@ -36,8 +36,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/Edge.o \
+	${OBJECTDIR}/src/GeoPoint.o \
 	${OBJECTDIR}/src/Graph.o \
-	${OBJECTDIR}/src/Point.o \
+	${OBJECTDIR}/src/Vertex.o \
 	${OBJECTDIR}/src/main.o
 
 
@@ -70,15 +71,20 @@ ${OBJECTDIR}/src/Edge.o: src/Edge.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Edge.o src/Edge.cpp
 
+${OBJECTDIR}/src/GeoPoint.o: src/GeoPoint.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/GeoPoint.o src/GeoPoint.cpp
+
 ${OBJECTDIR}/src/Graph.o: src/Graph.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Graph.o src/Graph.cpp
 
-${OBJECTDIR}/src/Point.o: src/Point.cpp 
+${OBJECTDIR}/src/Vertex.o: src/Vertex.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Point.o src/Point.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Vertex.o src/Vertex.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src

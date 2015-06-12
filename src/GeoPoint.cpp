@@ -5,32 +5,35 @@
  * Created on June 11, 2015, 12:28 PM
  */
 
-#include "Point.hpp"
+#include "GeoPoint.hpp"
+#include <cstdlib> //NULL, omfg
 
-Point::Point(double lat,double lon): x(lat),y(lon){
+GeoPoint::GeoPoint(double lat,double lon): x(lat),y(lon){
 }
 
-Point::Point(const Point& orig) {
+GeoPoint::GeoPoint(const GeoPoint& orig) {
     this->x=orig.x;
     this->y=orig.y;
+    this->associatedVertex=NULL;
+    this->associatedEdge=NULL;
 }
 
-Point::~Point() {
+GeoPoint::~GeoPoint() {
 }
 
-double Point::deg2rad(double deg) const{
+double GeoPoint::deg2rad(double deg) const{
     return (deg/180) * M_PI;
 }
 
-double Point::getXrad() const{
+double GeoPoint::getXrad() const{
     return deg2rad(this->x);
 }
 
-double Point::getYrad() const{
+double GeoPoint::getYrad() const{
     return deg2rad(this->y);
 }
     
-bool Point::operator <(const Point& other) const{
+bool GeoPoint::operator <(const GeoPoint& other) const{
     if(this->x != other.x){
         return this->x < other.x;
     }else{
@@ -38,7 +41,7 @@ bool Point::operator <(const Point& other) const{
     }    
 }
 
-double Point::distance(const Point & B) const{
+double GeoPoint::distance(const GeoPoint & B) const{
     // http://www.movable-type.co.uk/scripts/latlong.html
     
     double d_lat = this->getXrad() - B.getXrad();

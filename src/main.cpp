@@ -1,13 +1,13 @@
 /* 
  * File:   main.cpp
- * Author: bedna
+ * Author: Adam Benda <adam@adasek.cz>
  *
  * Created on June 11, 2015, 12:04 PM
  */
 
 #include <cstdlib>
 #include <iostream>
-#include "Point.hpp"
+#include "GeoPoint.hpp"
 #include "Edge.hpp"
 #include "Graph.hpp"
 

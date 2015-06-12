@@ -1,6 +1,6 @@
 /* 
  * File:   Graph.cpp
- * Author: bedna
+ * Author: Adam Benda <adam@adasek.cz>
  * 
  * Created on June 12, 2015, 1:34 PM
  */
@@ -17,8 +17,9 @@ http://stackoverflow.com/questions/671714/modifying-vertex-properties-in-a-boost
 
 Graph::Graph() {
     //Temporary: load data in constructor
-   Point * p = new Point(50,30);
-   points.insert(p);
+   GeoPoint * p = new GeoPoint(50,30);
+   Vertex * v = new Vertex(p);
+   vertices.insert(v);
    
 }
 
@@ -28,7 +29,7 @@ Graph::Graph(const Graph& orig) {
 Graph::~Graph() {
 }
 
-Point * Graph::find(const Point& point){
+GeoPoint * Graph::find(const GeoPoint& point){
 //TODO
 
 
