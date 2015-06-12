@@ -1,6 +1,6 @@
 /* 
- * File:   Point.cpp
- * Author: bedna
+ * File:   GeoPoint.cpp
+ * Author: Adam Benda <adam@adasek.cz>
  * 
  * Created on June 11, 2015, 12:28 PM
  */
