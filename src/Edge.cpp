@@ -16,3 +16,12 @@ Edge::Edge(const Edge& orig) {
 Edge::~Edge() {
 }
 
+bool Edge::operator <(const Edge& other) const{
+    if(this->source != other.source){
+        return this->source < other.source;
+    }else{
+        return this->dest < other.dest;
+    }
+
+}
+

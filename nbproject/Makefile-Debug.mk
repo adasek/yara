@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/Edge.o \
+	${OBJECTDIR}/src/Graph.o \
 	${OBJECTDIR}/src/Point.o \
 	${OBJECTDIR}/src/main.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/src/Edge.o: src/Edge.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Edge.o src/Edge.cpp
+
+${OBJECTDIR}/src/Graph.o: src/Graph.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Graph.o src/Graph.cpp
 
 ${OBJECTDIR}/src/Point.o: src/Point.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src

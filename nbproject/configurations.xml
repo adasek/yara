@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>src/Edge.hpp</itemPath>
+      <itemPath>src/Graph.hpp</itemPath>
       <itemPath>src/Point.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -16,6 +17,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>src/Edge.cpp</itemPath>
+      <itemPath>src/Graph.cpp</itemPath>
       <itemPath>src/Point.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
@@ -46,6 +48,10 @@
       <item path="src/Edge.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Edge.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Graph.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Point.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -79,6 +85,10 @@
       <item path="src/Edge.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Edge.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Graph.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Point.cpp" ex="false" tool="1" flavor2="0">
       </item>

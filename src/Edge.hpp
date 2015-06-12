@@ -7,7 +7,7 @@
 
 #ifndef EDGE_HPP
 #define	EDGE_HPP
-
+#include "Point.hpp"
 
 class Edge {
 
@@ -24,9 +24,14 @@ public:
     Edge();
     Edge(const Edge& orig);
     virtual ~Edge();
+    
+    bool operator <(const Edge&) const;
+    //bool operator <(const Point&);
+    
 private:
     double distanceOrig; //Distance in minutes based on datafile
-    
+    Point * source;
+    Point * dest;
 
 };
 

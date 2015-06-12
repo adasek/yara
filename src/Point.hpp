@@ -24,6 +24,7 @@ public:
     double distance(const Point & B) const; //shortest distance (on the simplified Earth surface = sphere) 
     double getXrad() const;
     double getYrad() const;
+    bool operator <(const Point&) const;
     
 private:
     double x; //latitude -90..90

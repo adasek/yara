@@ -30,6 +30,13 @@ double Point::getYrad() const{
     return deg2rad(this->y);
 }
     
+bool Point::operator <(const Point& other) const{
+    if(this->x != other.x){
+        return this->x < other.x;
+    }else{
+        return this->y < other.y;
+    }    
+}
 
 double Point::distance(const Point & B) const{
     // http://www.movable-type.co.uk/scripts/latlong.html

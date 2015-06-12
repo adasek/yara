@@ -9,19 +9,16 @@
 #include <iostream>
 #include "Point.hpp"
 #include "Edge.hpp"
+#include "Graph.hpp"
 
-#include "boost/graph/adjacency_list.hpp"
-#include "boost/graph/topological_sort.hpp"
-#include "boost/graph/astar_search.hpp"
 
 using namespace std;
-using namespace boost;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-  
+  Graph graph();
   
     return 0;
 }
